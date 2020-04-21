@@ -6,25 +6,18 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="https://codepen.io/tarciozemel/pen/OzKrVJ.css" media="screen" />
   <style>
-    
     .container {
-      display: flex;   
+      display: flex;
+      flex-direction: row;
       border: 5px solid #fff;
-      width: 400px;        
+      width: 800px;
+    } 
+    .container div {
+      margin: 0;
+      padding: 20px 0;
+      flex-basis: 250px;
     }
-    .container div{
-     margin: 0;
-     padding: 20px 0;
-     width: 150px;
-     flex-shrink: 1;
      
-    }
-    .container div:nth-child(2){
-       flex-shrink: 3;
-    }
-
-    
-   
   </style>
 </head>
 <body>

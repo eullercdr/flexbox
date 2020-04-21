@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="https://codepen.io/tarciozemel/pen/OzKrVJ.css" media="screen" />
+  <style>
+    body.container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .content {
+      display: flex;
+      flex:1;
+      flex-direction: column;
+    }
+    .main {
+      flex: 1;
+    }
+    .main {
+      flex:1
+    }
+    .sidebar {
+      order: -1;
+    }
+    @media (min-width: 56.25em) {
+      .content{
+        flex-direction: row;
+      }
+    }
+  </style>
+</head>
+<body class="container">
+  <header>HEADER</header>
+  <div class="content container">
+      <main class="main">CONTENT</main>
+      <aside class="sidebar">SIDEBAR</aside>
+      <aside class="ads">ADS</aside>
+  </div>
+  <footer>FOOTER</footer>
+</body>
+</html>
